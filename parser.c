@@ -81,10 +81,6 @@ int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
 
                 Employee* e = employee_new();
                 fread(e, sizeof(Employee), 1, pFile);
-                //e->id = id;
-                //strcpy(e->nombre, name);
-                //e->horasTrabajadas = ht;
-                //e->sueldo = sueldo;
                 ll_add(pArrayListEmployee, e);
                 line++;
 
